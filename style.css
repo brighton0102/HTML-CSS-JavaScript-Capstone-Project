@@ -19,7 +19,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 1rem;
+    /* padding: 1rem; */
+  }
+
+  .desktop-nav {
+    display: none;
   }
 
   .bar {
@@ -85,6 +89,7 @@
     padding: 1rem;
     line-height: 1.25rem;
     color: #868686;
+    display: inline-block;
 }
 
 /* main section*/
@@ -190,4 +195,147 @@
   cursor: pointer;
   text-align: center;
   align-content: center;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 768px) {
+  .container{
+    background-image: url('./images/base/main_big.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .heading {
+    margin: 200px 200px;
+  }
+
+  .desktop-nav {
+    background-color: #272A33;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    padding-right: 224px;
+  }
+
+  .desktop-nav ul {
+    list-style-type: none;
+    display: flex;
+
+  }
+
+  .desktop-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  .twitter-icon {
+    padding-left: 20px;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #EC5242;
+    margin-left: 200px;
+  }
+
+  .desktop-navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  .desktop-navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .desktop-navbar ul li {
+    margin-right: 200px;
+  }
+
+  .desktop-navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 30px;
+  }
+
+  /* Popular Services*/
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .main-program h1 {
+    margin: 50px 50px;
+  }
+
+  .btn-container {
+    margin: 50px 50px;
+  }
+
+  /* Specialist Doctors Section*/
+
+  .specialist-cards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .show-more-btn {
+    display: none;
+  }
+
+  /* Partners */
+
+  .partners {
+    background-color: #272A33;
+  }
+
+  .partners h1 {
+    text-align: center;
+    color: #868686;
+    font-weight: 400;
+    text-decoration: underline #EC5242;
+    padding: 1rem;
+  }
+
+  .partners-container {
+    margin-left: 200px;
+  }
+  
+  footer {
+    display: flex;
+  }
+
+  .logo-container {
+    padding: 100px 30px;
+  }
+
+  .copy-right {
+    padding-top: 78px;
+  }
+
+  .copy-right-author {
+    font-weight: bold;
+  }
+
 }
