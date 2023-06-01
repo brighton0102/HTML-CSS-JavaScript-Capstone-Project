@@ -3,12 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  html {
     box-sizing: border-box;
   }
-  
   
   body {
     font-family: Lato, sans-serif;
@@ -19,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* padding: 1rem; */
+    padding: 1rem;
   }
 
   .desktop-nav {
@@ -44,13 +40,26 @@
     transition: all 0.3s ease-in-out;
     background-color: #272A33;
   }
-  
-  .burger {
-    display: block;
-    margin: 5px 0px;
-    cursor: pointer;
-  }
 
+  .burger {
+    position: relative;
+    /* display: block; */
+    /* margin: 5px 0px; */
+    cursor: pointer;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-bar {
+    position: relative;
+    cursor: pointer;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
   .burger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -94,7 +103,7 @@
     color: rgb(0, 0, 0);
     margin-top: 2.313rem;
     border: #fff 2px solid;
-    background-color: #F8F8F8;
+    background-color: #fff;
     padding: 1rem;
     line-height: 1.25rem;
     color: #868686;
@@ -115,8 +124,19 @@
   text-align: center;
   color: #fff;
   font-weight: 400;
-  text-decoration: underline #EC5242;
   margin-bottom: 1.25rem;
+}
+
+.main-program h1::after {
+  content: '';
+  height: 4px;
+  width: 50px;
+  background-color: #EC5242;
+  bottom: 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.8em;
 }
 
 .card {
@@ -142,7 +162,7 @@
 }
 
 .services-btn {
-  background-color: #EC5242; /* Green */
+  background-color: #EC5242; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -167,11 +187,23 @@
 }
 
 .specialist-doctors h1 {
+  position: relative;
   text-align: center;
   color: #000000;
   font-weight: 400;
-  text-decoration: underline #EC5242;
   margin-bottom: 1.25rem;
+}
+
+.specialist-doctors h1::after {
+content: '';
+height: 4px;
+width: 50px;
+background-color: #EC5242;
+bottom: 0;
+border-radius: 10px;
+margin: 0 auto;
+display: block;
+margin-top: 0.8em;
 }
 
 .specialist-cards {
@@ -182,6 +214,10 @@
   display: flex;
   gap: 0.5rem;
   padding-bottom: 30px;
+}
+
+.specialist-info img {
+  max-height: 180px;
 }
 
 .specialist-name {
@@ -270,6 +306,7 @@ footer {
     background-position: center;
     height: 100vh;
     background-size: cover;
+    padding: 0;
   }
 
   .burger {
@@ -380,8 +417,19 @@ footer {
     text-align: center;
     color: #868686;
     font-weight: 400;
-    text-decoration: underline #EC5242;
     padding: 1rem;
+  }
+
+  .partners h1::after {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: #EC5242;
+    bottom: 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.8em;
   }
 
   .partners-container {
