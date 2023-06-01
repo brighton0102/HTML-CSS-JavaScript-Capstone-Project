@@ -1,0 +1,41 @@
+{
+    "data": {
+      "capstone":  [
+        {   
+            "img": "./images/base/speaker_01.png",
+            "name": "Dr.Daisy Gomez",
+            "title": "Doctor",
+            "description": "Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties",
+          },
+          {   
+            "img": "./images/base/speaker_02.png",
+            "name": "Dr.Sigmund Freud",
+            "title": "Doctor",
+            "description": "Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties",
+          },
+          {
+            "img": "./images/base/speaker_03.png",
+            "name": "Dr.Charles Wang",
+            "title": "Doctor",
+            "description": "Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties",
+          },
+          {
+            "img": "./images/base/speaker_04.png",
+            "name": "Dr.Georges Mathe",
+            "title": "Doctor",
+            "description": "Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties",
+          },
+          {
+            "img": "./images/base/speaker_05.png",
+            "name": "Dr.Sanjay Sachdeva",
+            "title": "Doctor",
+            "description": "Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties",
+          },
+          {
+            "img": "./images/base/speaker_06.png",
+            "name": "Dr.Edward Jenner",
+            "title": "Doctor",
+            "description": "Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties",
+          },
+      ]
+}}
