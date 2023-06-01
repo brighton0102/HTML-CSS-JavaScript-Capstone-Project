@@ -43,6 +43,10 @@ body {
 
 .burger {
   position: relative;
+
+  /* display: block; */
+
+  /* margin: 5px 0px; */
   cursor: pointer;
   height: 4em;
   display: flex;
@@ -78,8 +82,23 @@ body {
   color: #ec5242;
 }
 
+.heading p {
+  text-align: center;
+}
+
+.check-in-text {
+  padding-top: 1rem;
+  color: #000;
+}
+
+.second-title {
+  font-weight: bold;
+  color: #000;
+}
+
 .heading h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .heading h2 {
@@ -106,26 +125,16 @@ body {
   line-height: 1.25rem;
   color: #868686;
   display: inline-block;
-}
-
-/* main section */
-
-.main-program {
-  background: url('./images/base/program-summary-bcg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 1rem;
-}
-
-.main-program h1 {
   text-align: center;
-  color: #fff;
-  font-weight: 400;
-  margin-bottom: 1.25rem;
 }
 
-.main-program h1::after {
+.logo-summit h3 {
+  text-align: center;
+  margin: 2rem;
+  font-weight: 400;
+}
+
+.logo-summit h3::after {
   content: '';
   height: 4px;
   width: 50px;
@@ -137,68 +146,51 @@ body {
   margin-top: 0.8em;
 }
 
-.card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  margin-bottom: 0.625rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.none {
+  display: none;
 }
 
-.card-title {
-  color: #ec5242;
-  font-weight: 500;
-  font-size: 1rem;
+.logo-summit {
+  border-bottom: #868686 1px solid;
 }
 
-.card-info {
-  color: #fff;
-}
-
-.services-btn {
-  background-color: #ec5242;
-  border: none;
-  color: white;
-  padding: 15px 32px;
+.logo-summit p {
   text-align: center;
+}
+
+.logo-summit-2023 {
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.15s, color 0.15s;
-}
-
-.services-btn:hover {
-  background-color: #868686;
   color: #ec5242;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
-/* Specialist Doctors */
-
-.specialist-doctors {
-  padding: 1rem;
-}
-
-.specialist-doctors h1 {
-  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
-  color: #000;
-  font-weight: 400;
-  margin-bottom: 1.25rem;
 }
 
-.specialist-doctors h1::after {
+/* hudson history */
+
+.history {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.history img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.history h3 {
+  text-align: center;
+  margin: 2rem;
+  font-weight: 400;
+}
+
+.history h3::after {
   content: '';
   height: 4px;
   width: 50px;
@@ -210,48 +202,55 @@ body {
   margin-top: 0.8em;
 }
 
-.specialist-cards {
-  margin-top: 50px;
-}
-
-.specialist-info {
-  display: flex;
-  gap: 0.5rem;
-  padding-bottom: 30px;
-}
-
-.specialist-info img {
-  max-height: 180px;
-}
-
-.specialist-name {
-  font-weight: bold;
-}
-
-.specialist-title {
-  color: #ec5242;
-  padding-bottom: 1rem;
-}
-
-.show-more-btn {
-  display: block;
-  width: 100%;
-  border: #868686 1px solid;
-  background-color: #fff;
-  color: #868686;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
+.history p {
   text-align: center;
-  align-content: center;
+  margin-bottom: 1rem;
 }
 
 .partners {
-  display: none;
+  background-color: #272a33;
+  display: block;
+  padding: 1rem;
+}
+
+.partners h1 {
+  text-align: center;
+  color: #868686;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.partners h1::after {
+  content: '';
+  height: 4px;
+  width: 50px;
+  background-color: #ec5242;
+  bottom: 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.8em;
+}
+
+.partners img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 footer {
-  display: none;
+  display: flex;
+  text-align: center;
+}
+
+.copy-right {
+  padding-top: 18px;
+  margin-bottom: 2rem;
+}
+
+.copy-right-author {
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -271,9 +270,14 @@ footer {
     padding-top: 106px;
   }
 
+  .nav-items {
+    list-style-type: none;
+    margin: 5px 20px;
+  }
+
   .nav-items a {
     color: #fff;
-    font-family: Lato, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -284,11 +288,6 @@ footer {
     top: 0;
   }
 
-  .nav-items {
-    margin: 5px 20px;
-    list-style-type: none;
-  }
-
   .burger {
     display: block;
     color: white;
@@ -296,18 +295,7 @@ footer {
     position: relative;
     z-index: 99;
   }
-
-  .specialist-info {
-    display: none;
-  }
-
-  .specialist-info:first-child,
-  .specialist-info:nth-child(2) {
-    display: flex;
-  }
 }
-
-/* Desktop */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -325,6 +313,27 @@ footer {
 
   .heading {
     margin: 200px 200px;
+  }
+
+  .heading h1::after {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: #ec5242;
+    bottom: 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.8em;
+  }
+
+  .check-in-text {
+    padding-top: 1rem;
+  }
+
+  .second-title {
+    padding-top: 1rem;
+    text-decoration: underline;
   }
 
   .desktop-nav {
@@ -387,46 +396,85 @@ footer {
     color: #ec5242;
   }
 
-  /* Popular Services */
+  /* Logo Summit */
 
-  .cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-left: 12.5rem;
-    margin-right: 12.5rem;
+  .logo-summit {
+    border-bottom: #868686 1px solid;
   }
 
-  .main-program h1 {
-    margin: 50px 50px;
+  .logo-summit h3 {
+    text-align: center;
+    margin: 2rem;
+    font-weight: 400;
   }
 
-  .btn-container {
-    margin: 50px 50px;
+  .logo-summit h3::after {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: #ec5242;
+    bottom: 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.8em;
   }
 
-  .card {
-    display: flex;
-    flex-direction: column;
+  .logo-summit p {
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
   }
 
-  .card p {
+  .logo-summit-2023 {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #ec5242;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
 
-  /* Specialist Doctors Section */
-
-  .specialist-cards {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-left: 200px;
-    margin-right: 200px;
+  .none {
+    display: inline-block;
   }
 
-  .show-more-btn {
-    display: none;
+  /* History */
+
+  .history {
+    text-align: center;
+  }
+
+  .history img {
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: auto;
+  }
+
+  .history h3 {
+    text-align: center;
+    margin: 2rem;
+    font-weight: 400;
+  }
+
+  .history h3::after {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: #ec5242;
+    bottom: 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.8em;
+  }
+
+  .history p {
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   /* Partners */
@@ -456,6 +504,11 @@ footer {
     margin-top: 0.8em;
   }
 
+  .partners img {
+    display: inline-block;
+    width: auto;
+  }
+
   .partners-container {
     display: flex;
     justify-content: space-between;
@@ -468,14 +521,12 @@ footer {
 
   footer {
     display: flex;
-  }
-
-  .logo-container {
-    padding: 100px 30px;
+    justify-content: center;
   }
 
   .copy-right {
     padding-top: 78px;
+    text-align: center;
   }
 
   .copy-right-author {
