@@ -395,7 +395,13 @@
       text-decoration: none;
       color: #000000;
       margin-left: 30px;
+      transition: all 0.15s linear;
     }
+
+    .desktop-navbar a:hover {
+      color: #EC5242;
+    }
+  
 
     /* Logo Summit*/
 
