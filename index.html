@@ -85,68 +85,25 @@
     <!--- Specialist Doctors Team--->
     <section class="specialist-doctors">
         <h1>Specialist Doctors</h1>
-        <div class="specialist-cards">
-            <div class="specialist-info">
-                <img src="./images/base/speaker_01.png" alt="">
-                <article class="specialist-info-container">
-                    <h3 class="specialist-name">Dr.Daisy Gomez</h3>
-                        <p class="specialist-title">Doctor</p>
-                    <p>Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties </p>
-                </article>
-            </div>
-            <div class="specialist-info">
-                <img src="./images/base/speaker_02.png" alt="">
-                <article class="specialist-info-container">
-                    <h3 class="specialist-name">Dr.Sigmund Freud</h3>
-                        <p class="specialist-title">Doctor</p>
-                    <p>Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties </p>
-                </article>
-            </div>
-            <div class="specialist-info">
-                <img src="./images/base/speaker_03.png" alt="">
-                <article class="specialist-info-container">
-                    <h3 class="specialist-name">Dr.Charles Wang</h3>
-                        <p class="specialist-title">Doctor</p>
-                    <p>Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties </p>
-                </article>
-            </div>
-            <div class="specialist-info">
-                <img src="./images/base/speaker_04.png" alt="">
-                <article class="specialist-info-container">
-                    <h3 class="specialist-name">Dr.Georges Mathe</h3>
-                        <p class="specialist-title">Doctor</p>
-                    <p>Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties </p>
-                </article>
-            </div>
-            <div class="specialist-info">
-                <img src="./images/base/speaker_05.png" alt="">
-                <article class="specialist-info-container">
-                    <h3 class="specialist-name">Dr.Sanjay Sachdeva</h3>
-                        <p class="specialist-title">Doctor</p>
-                    <p>Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties </p>
-                </article>
-            </div>
-            <div class="specialist-info">
-                <img src="./images/base/speaker_06.png" alt="">
-                <article class="specialist-info-container">
-                    <h3 class="specialist-name"> Dr.Edward Jenner</h3>
-                        <p class="specialist-title">Doctor</p>
-                    <p>Medicine is the art and science of healing, aimed at alleviating.Surgeons seem to thrive on their core tasks, most notably surgery. By contrast, administrative duties </p>
-                </article>
-            </div>
-        </div>
-        <button class="show-more-btn" type="button">MORE <img src="./images/base/arrow_down.png" alt=""></button>
+        <section class="specialist-cards"></section>
+        <button id="moreBtn" class="show-more-btn" type="button">MORE <img src="./images/base/arrow_down.png" alt=""></button>
     </section>
-
-    <!--- Prtners --->
+        <!--- Prtners --->
 
     <section class="partners">
         <h1>Partner</h1>
         <div class="partners-container">
-            <img src="./images/sponsors/bray.png" alt="">
-            <img src="./images/sponsors/bray.png" alt="">
-            <img src="./images/sponsors/bray.png" alt="">
+            <div>
+                <img src="./images/sponsors/bray.png" alt="">
+            </div>
+            <div>
+                <img src="./images/sponsors/bray.png" alt="">
+            </div>
+            <div>
+                <img src="./images/sponsors/bray.png" alt="">
+            </div>
         </div>
+    </div>
     </section>
 
     <footer>
@@ -161,5 +118,20 @@
     </footer>
 
     <script src="./utils/menu.js"></script>
+    <script src="./utils/specialist_doctors.js"></script>
+    <script>
+        window.addEventListener("load", () => { // when the page has loaded
+            const btn = document.getElementById("moreBtn");
+            btn.addEventListener("click", showMore);
+            
+            function showMore() {
+               let element = document.getElementsByClassName("specialist-info");
+                for(var i = 0; i < element.length; i++){
+                    element[i].style.display = "flex";
+                }
+                btn.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,121 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Lato, sans-serif;
-  }
-
-  .container {
-    background-image: url('./images/base/mobile_intro_bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 1rem;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .nav-items a {
-    display: block;
-    text-decoration: none;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #272A33;
-  }
-
-  .burger {
-    position: relative;
-    cursor: pointer;
-    height: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menu-bar {
-    position: relative;
-    cursor: pointer;
-    height: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .burger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    background-color: #000000;
-  }
-
-  .burger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-    background-color: #000000;
-  }
-
-  .heading{
-    margin-top: 3rem;
-    color:#EC5242;
-  }
-
-  .heading h1 {
-    font-size: 2.5rem;
-  }
-
-  .heading h2 {
-    color: #868686;
-    margin-top: 1.875rem;
-  }
-
-  .title{
-    font-size: 1.563rem;
-    font-weight: 300;
-  }
-
-  .heading .second-title {
-    color: #868686;
-    margin-top: 0.5rem;
-    padding-bottom: 1.563rem;
-  }
-
-  .heading .description {
-    color: rgb(0, 0, 0);
-    margin-top: 2.313rem;
-    border: #fff 2px solid;
-    background-color: #fff;
-    padding: 1rem;
-    line-height: 1.25rem;
-    color: #868686;
-    display: inline-block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* main section*/
+body {
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  background-image: url('./images/base/mobile_intro_bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.nav-items a {
+  display: block;
+  text-decoration: none;
+}
+
+.logo {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #272a33;
+}
+
+.burger {
+  position: relative;
+  cursor: pointer;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-bar {
+  position: relative;
+  cursor: pointer;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.burger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #000;
+}
+
+.burger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #000;
+}
+
+.heading {
+  margin-top: 3rem;
+  color: #ec5242;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+}
+
+.heading h2 {
+  color: #868686;
+  margin-top: 1.875rem;
+}
+
+.title {
+  font-size: 1.563rem;
+  font-weight: 300;
+}
+
+.heading .second-title {
+  color: #868686;
+  margin-top: 0.5rem;
+  padding-bottom: 1.563rem;
+}
+
+.heading .description {
+  color: rgb(0, 0, 0);
+  margin-top: 2.313rem;
+  border: #fff 2px solid;
+  background-color: #fff;
+  padding: 1rem;
+  line-height: 1.25rem;
+  color: #868686;
+  display: inline-block;
+}
+
+/* main section */
 
 .main-program {
-    background: url('./images/base/program-summary-bcg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 1rem;
+  background: url('./images/base/program-summary-bcg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
 }
 
 .main-program h1 {
@@ -129,7 +130,7 @@
   content: '';
   height: 4px;
   width: 50px;
-  background-color: #EC5242;
+  background-color: #ec5242;
   bottom: 0;
   border-radius: 10px;
   margin: 0 auto;
@@ -150,7 +151,7 @@
 }
 
 .card-title {
-  color: #EC5242;
+  color: #ec5242;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -160,7 +161,7 @@
 }
 
 .services-btn {
-  background-color: #EC5242; 
+  background-color: #ec5242;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -174,17 +175,17 @@
 
 .services-btn:hover {
   background-color: #868686;
-  color: #EC5242;
+  color: #ec5242;
 }
 
 .btn-container {
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
 }
 
-/* Specialist Doctors*/
+/* Specialist Doctors */
 
 .specialist-doctors {
   padding: 1rem;
@@ -193,21 +194,21 @@
 .specialist-doctors h1 {
   position: relative;
   text-align: center;
-  color: #000000;
+  color: #000;
   font-weight: 400;
   margin-bottom: 1.25rem;
 }
 
 .specialist-doctors h1::after {
-content: '';
-height: 4px;
-width: 50px;
-background-color: #EC5242;
-bottom: 0;
-border-radius: 10px;
-margin: 0 auto;
-display: block;
-margin-top: 0.8em;
+  content: '';
+  height: 4px;
+  width: 50px;
+  background-color: #ec5242;
+  bottom: 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.8em;
 }
 
 .specialist-cards {
@@ -229,7 +230,7 @@ margin-top: 0.8em;
 }
 
 .specialist-title {
-  color: #EC5242;
+  color: #ec5242;
   padding-bottom: 1rem;
 }
 
@@ -244,12 +245,6 @@ margin-top: 0.8em;
   cursor: pointer;
   text-align: center;
   align-content: center;
-  transition: background-color 0.15s, color 0.15s;
-}
-
-.show-more-btn:hover {
-  background-color: #868686;
-  color: #EC5242;
 }
 
 .partners {
@@ -267,7 +262,7 @@ footer {
     left: 0;
     gap: 0;
     flex-direction: column;
-    background: #EC5242;
+    background: #ec5242;
     mix-blend-mode: multiply;
     backdrop-filter: blur(10px);
     width: 100%;
@@ -277,15 +272,11 @@ footer {
     padding-top: 106px;
   }
 
-  .nav-items {
-    list-style-type: none;
-  }
-
   .nav-items a {
     color: #fff;
     font-family: Lato, sans-serif;
     font-style: normal;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 32px;
     line-height: 40px;
   }
@@ -296,6 +287,7 @@ footer {
 
   .nav-items {
     margin: 5px 20px;
+    list-style-type: none;
   }
 
   .burger {
@@ -306,12 +298,19 @@ footer {
     z-index: 99;
   }
 
+  .specialist-info {
+    display: none;
+  }
+
+  .specialist-info:first-child, .specialist-info:nth-child(2)  {
+    display: flex;
+  }
 }
 
 /* Desktop */
 
 @media screen and (min-width: 768px) {
-  .container{
+  .container {
     background-image: url('./images/base/main_big.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -329,7 +328,7 @@ footer {
   }
 
   .desktop-nav {
-    background-color: #272A33;
+    background-color: #272a33;
     display: flex;
     justify-content: flex-end;
     padding: 0.5rem;
@@ -339,7 +338,6 @@ footer {
   .desktop-nav ul {
     list-style-type: none;
     display: flex;
-
   }
 
   .desktop-nav ul li a {
@@ -358,7 +356,7 @@ footer {
     font-size: 18px;
     line-height: 20px;
     text-decoration: none;
-    color: #EC5242;
+    color: #ec5242;
     margin-left: 200px;
   }
 
@@ -380,16 +378,16 @@ footer {
 
   .desktop-navbar ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
     margin-left: 30px;
     transition: all 0.15s linear;
   }
 
   .desktop-navbar a:hover {
-    color: #EC5242;
+    color: #ec5242;
   }
 
-  /* Popular Services*/
+  /* Popular Services */
 
   .cards-container {
     display: grid;
@@ -407,7 +405,16 @@ footer {
     margin: 50px 50px;
   }
 
-  /* Specialist Doctors Section*/
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  /* Specialist Doctors Section */
 
   .specialist-cards {
     display: grid;
@@ -425,8 +432,9 @@ footer {
   /* Partners */
 
   .partners {
-    background-color: #272A33;
+    background-color: #272a33;
     display: block;
+    padding: 0 200px;
   }
 
   .partners h1 {
@@ -440,7 +448,7 @@ footer {
     content: '';
     height: 4px;
     width: 50px;
-    background-color: #EC5242;
+    background-color: #ec5242;
     bottom: 0;
     border-radius: 10px;
     margin: 0 auto;
@@ -449,9 +457,15 @@ footer {
   }
 
   .partners-container {
-    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
   }
-  
+
+  .partners-container div{
+    margin: 30px;
+  }
+
   footer {
     display: flex;
   }
@@ -467,5 +481,4 @@ footer {
   .copy-right-author {
     font-weight: bold;
   }
-
 }
