@@ -1,8 +1,8 @@
 async function api() {
-    const response = await fetch("./utils/capstone.json");
-    const jsonData = await response.json();
-    jsonData.data.capstone.forEach((element, index) => {
-        const cardTemplate = `
+  const response = await fetch('./utils/capstone.json');
+  const jsonData = await response.json();
+  jsonData.data.capstone.forEach((element, index) => {
+    const cardTemplate = `
             <div class="specialist-info">
                 <img src=${element.img} alt=${element.img + index}>
                 <article class="specialist-info-container">
@@ -13,10 +13,9 @@ async function api() {
             </div>
         `;
 
-        const el = document.querySelector(".specialist-cards");
-        el.innerHTML += cardTemplate;
-        
-    });
+    const el = document.querySelector('.specialist-cards');
+    el.innerHTML += cardTemplate;
+  });
 }
 
 api();

@@ -118,7 +118,6 @@ body {
 }
 
 .heading .description {
-  color: rgb(0, 0, 0);
   margin-top: 2.313rem;
   border: #fff 2px solid;
   background-color: #fff;
@@ -254,7 +253,6 @@ footer {
   padding-bottom: 1rem;
 }
 
-
 @media screen and (max-width: 768px) {
   .desktop-nav-items {
     position: fixed;
@@ -274,23 +272,20 @@ footer {
 
   .nav-items {
     list-style-type: none;
+    margin: 5px 20px;
   }
 
   .nav-items a {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 32px;
     line-height: 40px;
   }
 
   .desktop-nav-items.active {
     top: 0;
-  }
-
-  .nav-items {
-    margin: 5px 20px;
   }
 
   .burger {
@@ -401,7 +396,6 @@ footer {
     color: #ec5242;
   }
 
-
   /* Logo Summit */
 
   .logo-summit {
@@ -496,7 +490,6 @@ footer {
     color: #868686;
     font-weight: 400;
     padding: 1rem;
-
   }
 
   .partners h1::after {
@@ -522,10 +515,9 @@ footer {
     gap: 30px;
   }
 
-  .partners-container div{
+  .partners-container div {
     margin: 30px;
   }
-
 
   footer {
     display: flex;
