@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://brighton0102.github.io/HTML-CSS-JavaScript-Capstone-Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -247,16 +247,16 @@ body {
 }
 
 .creative-commons {
-  display: block;
+  display: none;
 }
 
-.creative-commons-logo img{
+.creative-commons-logo img {
   width: 145px;
 }
 
-.copy-right p{
-  color: #3B3E45;
-  font-family: Lato;
+.copy-right p {
+  color: #3b3e45;
+  font-family: Lato, sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -273,8 +273,7 @@ body {
   gap: 1rem;
 }
 
-.copy-right
-.lorem {
+.copy-right .lorem {
   display: none;
 }
 
@@ -344,8 +343,7 @@ body {
     font-size: 65px;
   }
 
-  .heading
-  .title {
+  .heading .title {
     display: none;
   }
 
@@ -390,9 +388,9 @@ body {
   }
 
   #campaign-btn {
-    border: 5px solid #EC4327;
-    color: #EC4327;
-    padding: 0px 17px 0px 18px;
+    border: 5px solid #ec4327;
+    color: #ec4327;
+    padding: 0 17px 0 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -522,7 +520,6 @@ body {
 
   .partners {
     background-color: #272a33;
-    display: block;
     padding: 0 200px;
     display: none;
   }
@@ -564,7 +561,7 @@ body {
   footer {
     display: flex;
     align-items: center;
-    background-color: #2E2E2E;
+    background-color: #2e2e2e;
     justify-content: center;
     align-content: center;
   }
@@ -572,6 +569,7 @@ body {
   .creative-commons {
     align-items: center;
     margin-right: 4.063rem;
+    display: inline;
   }
 
   .copy-right {
@@ -583,20 +581,15 @@ body {
   .copy-right p {
     color: #fff;
     text-align: left;
+    font-size: 12px;
   }
 
-  .copy-right
-  .lorem {
+  .copy-right .lorem {
     display: inline-block;
     font-size: 12px;
   }
 
-  .copy-right p{
-    font-size: 12px;
-  }
-
-  .copy-right
-  .copy-right-author {
+  .copy-right .copy-right-author {
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 20px;

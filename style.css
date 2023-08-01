@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -85,12 +84,12 @@ body {
 }
 
 .heading h2 {
-   /* color: #868686; */
-   margin-top: 1.875rem; 
+  /* color: #868686; */
+  margin-top: 1.875rem;
   margin-bottom: 1rem;
   color: #595959;
-  font-family: Gothic A1;
-  font-size: 20pxpx;
+  font-family: Gothic A1, sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: 900;
   line-height: 0px; /* 0% */
@@ -251,9 +250,10 @@ body {
   content: '';
   height: 2px;
   width: 25px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   bottom: 0;
   border-radius: 10px;
+
   /* margin: 0 auto; */
   display: block;
   margin-top: 0.8em;
@@ -364,7 +364,7 @@ footer {
 
   .heading h2 {
     color: #595959;
-    font-family: Gothic A1;
+    font-family: Gothic A1, sans-serif;
     font-size: 42.484px;
     font-style: normal;
     font-weight: 900;
@@ -379,7 +379,7 @@ footer {
 
   .second-title {
     color: #868686;
-    font-family: Gothic A1;
+    font-family: Gothic A1, sans-serif;
     font-size: 27.614px;
     font-style: normal;
     font-weight: 700;
@@ -387,15 +387,14 @@ footer {
     letter-spacing: -0.552px;
   }
 
-  .heading
-  .description {
-    border: 8.497px solid #FFF;
-    background: #F8F8F8;
+  .heading .description {
+    border: 8.497px solid #fff;
+    background: #f8f8f8;
     margin-bottom: 50px;
   }
 
   .desktop-nav {
-    background-color:#3E3E3E;
+    background-color: #3e3e3e;
     display: flex;
     justify-content: flex-end;
     padding: 0.5rem;
@@ -414,9 +413,9 @@ footer {
   }
 
   #campaign-btn {
-    border: 5px solid #EC4327;
-    color: #EC4327;
-    padding: 0px 17px 0px 18px;
+    border: 5px solid #ec4327;
+    color: #ec4327;
+    padding: 0 17px 0 18px;
     justify-content: center;
     align-items: center;
   }
@@ -477,11 +476,10 @@ footer {
     margin: 50px 50px;
   }
 
-  .btn-container
-  .services-btn {
+  .btn-container .services-btn {
     background: none;
-    color: #FFF;
-    font-family: Lato;
+    color: #fff;
+    font-family: Lato, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -489,7 +487,7 @@ footer {
     letter-spacing: -0.2px;
     text-decoration-line: underline;
   }
-  
+
   .card {
     display: flex;
     flex-direction: column;
@@ -544,7 +542,6 @@ footer {
 
   .partners-container {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
