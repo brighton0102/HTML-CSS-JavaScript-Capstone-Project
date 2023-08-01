@@ -136,7 +136,7 @@ body {
 
 .logo-summit h3::after {
   content: '';
-  height: 4px;
+  height: 2px;
   width: 50px;
   background-color: #ec5242;
   bottom: 0;
@@ -192,7 +192,7 @@ body {
 
 .history h3::after {
   content: '';
-  height: 4px;
+  height: 2px;
   width: 50px;
   background-color: #ec5242;
   bottom: 0;
@@ -222,7 +222,7 @@ body {
 
 .partners h1::after {
   content: '';
-  height: 4px;
+  height: 2px;
   width: 50px;
   background-color: #ec5242;
   bottom: 0;
@@ -233,24 +233,49 @@ body {
 }
 
 .partners img {
-  display: block;
-  width: 100%;
-  height: auto;
+  width: 100px;
 }
 
-footer {
+.partners-container div {
+  padding: 10px;
+}
+
+.partners-container {
   display: flex;
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.copy-right {
-  padding-top: 18px;
-  margin-bottom: 2rem;
+.creative-commons {
+  display: block;
 }
 
-.copy-right-author {
-  font-weight: bold;
-  padding-bottom: 1rem;
+.creative-commons-logo img{
+  width: 145px;
+}
+
+.copy-right p{
+  color: #3B3E45;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13.078px; /* 130.779% */
+  letter-spacing: -0.1px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+  margin-bottom: 27px;
+  gap: 1rem;
+}
+
+.copy-right
+.lorem {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -315,9 +340,18 @@ footer {
     margin: 200px 200px;
   }
 
+  .heading h1 {
+    font-size: 65px;
+  }
+
+  .heading
+  .title {
+    display: none;
+  }
+
   .heading h1::after {
     content: '';
-    height: 4px;
+    height: 2px;
     width: 50px;
     background-color: #ec5242;
     bottom: 0;
@@ -355,6 +389,15 @@ footer {
     margin-left: 20px;
   }
 
+  #campaign-btn {
+    border: 5px solid #EC4327;
+    color: #EC4327;
+    padding: 0px 17px 0px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .twitter-icon {
     padding-left: 20px;
   }
@@ -379,16 +422,13 @@ footer {
   .desktop-navbar ul {
     list-style-type: none;
     display: flex;
-  }
-
-  .desktop-navbar ul li {
     margin-right: 200px;
+    gap: 20px;
   }
 
   .desktop-navbar ul li a {
     text-decoration: none;
     color: #000;
-    margin-left: 30px;
     transition: all 0.15s linear;
   }
 
@@ -410,7 +450,7 @@ footer {
 
   .logo-summit h3::after {
     content: '';
-    height: 4px;
+    height: 2px;
     width: 50px;
     background-color: #ec5242;
     bottom: 0;
@@ -449,7 +489,8 @@ footer {
   }
 
   .history img {
-    margin-bottom: 2rem;
+    margin-bottom: 4.625rem;
+    padding-left: 1.563rem;
     display: inline-block;
     width: auto;
   }
@@ -462,7 +503,7 @@ footer {
 
   .history h3::after {
     content: '';
-    height: 4px;
+    height: 2px;
     width: 50px;
     background-color: #ec5242;
     bottom: 0;
@@ -483,6 +524,7 @@ footer {
     background-color: #272a33;
     display: block;
     padding: 0 200px;
+    display: none;
   }
 
   .partners h1 {
@@ -494,7 +536,7 @@ footer {
 
   .partners h1::after {
     content: '';
-    height: 4px;
+    height: 2px;
     width: 50px;
     background-color: #ec5242;
     bottom: 0;
@@ -521,15 +563,46 @@ footer {
 
   footer {
     display: flex;
+    align-items: center;
+    background-color: #2E2E2E;
     justify-content: center;
+    align-content: center;
+  }
+
+  .creative-commons {
+    align-items: center;
+    margin-right: 4.063rem;
   }
 
   .copy-right {
-    padding-top: 78px;
-    text-align: center;
+    padding-top: 6.5rem;
+    padding-bottom: 4.625rem;
+    align-items: center;
   }
 
+  .copy-right p {
+    color: #fff;
+    text-align: left;
+  }
+
+  .copy-right
+  .lorem {
+    display: inline-block;
+    font-size: 12px;
+  }
+
+  .copy-right p{
+    font-size: 12px;
+  }
+
+  .copy-right
   .copy-right-author {
     font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .creative-commons-logo {
+    display: none;
   }
 }

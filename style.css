@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -83,8 +85,20 @@ body {
 }
 
 .heading h2 {
-  color: #868686;
-  margin-top: 1.875rem;
+   /* color: #868686; */
+   margin-top: 1.875rem; 
+  margin-bottom: 1rem;
+  color: #595959;
+  font-family: Gothic A1;
+  font-size: 20pxpx;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0px; /* 0% */
+  letter-spacing: -1.6px;
+}
+
+.theme {
+  display: none;
 }
 
 .title {
@@ -127,7 +141,7 @@ body {
 
 .main-program h1::after {
   content: '';
-  height: 4px;
+  height: 2px;
   width: 50px;
   background-color: #ec5242;
   bottom: 0;
@@ -200,7 +214,7 @@ body {
 
 .specialist-doctors h1::after {
   content: '';
-  height: 4px;
+  height: 2px;
   width: 50px;
   background-color: #ec5242;
   bottom: 0;
@@ -231,6 +245,18 @@ body {
 .specialist-title {
   color: #ec5242;
   padding-bottom: 1rem;
+}
+
+.specialist-title::after {
+  content: '';
+  height: 2px;
+  width: 25px;
+  background: #D9D9D9;
+  bottom: 0;
+  border-radius: 10px;
+  /* margin: 0 auto; */
+  display: block;
+  margin-top: 0.8em;
 }
 
 .show-more-btn {
@@ -324,11 +350,52 @@ footer {
   }
 
   .heading {
-    margin: 200px 200px;
+    /* margin: 200px 200px; */
+    margin-left: 215px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .heading h1 {
+    display: none;
+  }
+
+  .heading h2 {
+    color: #595959;
+    font-family: Gothic A1;
+    font-size: 42.484px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 0px; /* 0% */
+    letter-spacing: -3.399px;
+    margin-bottom: 40px;
+  }
+
+  .theme {
+    display: block;
+  }
+
+  .second-title {
+    color: #868686;
+    font-family: Gothic A1;
+    font-size: 27.614px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px; /* 0% */
+    letter-spacing: -0.552px;
+  }
+
+  .heading
+  .description {
+    border: 8.497px solid #FFF;
+    background: #F8F8F8;
+    margin-bottom: 50px;
   }
 
   .desktop-nav {
-    background-color: #272a33;
+    background-color:#3E3E3E;
     display: flex;
     justify-content: flex-end;
     padding: 0.5rem;
@@ -344,6 +411,14 @@ footer {
     text-decoration: none;
     color: #fff;
     margin-left: 20px;
+  }
+
+  #campaign-btn {
+    border: 5px solid #EC4327;
+    color: #EC4327;
+    padding: 0px 17px 0px 18px;
+    justify-content: center;
+    align-items: center;
   }
 
   .twitter-icon {
@@ -370,16 +445,13 @@ footer {
   .desktop-navbar ul {
     list-style-type: none;
     display: flex;
-  }
-
-  .desktop-navbar ul li {
     margin-right: 200px;
+    gap: 20px;
   }
 
   .desktop-navbar ul li a {
     text-decoration: none;
     color: #000;
-    margin-left: 30px;
     transition: all 0.15s linear;
   }
 
@@ -391,7 +463,7 @@ footer {
 
   .cards-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
     margin-left: 12.5rem;
     margin-right: 12.5rem;
@@ -405,6 +477,19 @@ footer {
     margin: 50px 50px;
   }
 
+  .btn-container
+  .services-btn {
+    background: none;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.2px;
+    text-decoration-line: underline;
+  }
+  
   .card {
     display: flex;
     flex-direction: column;
@@ -432,7 +517,7 @@ footer {
   /* Partners */
 
   .partners {
-    background-color: #272a33;
+    background: #414246;
     display: block;
     padding: 0 200px;
   }
@@ -442,11 +527,12 @@ footer {
     color: #868686;
     font-weight: 400;
     padding: 1rem;
+    font-size: 30px;
   }
 
   .partners h1::after {
     content: '';
-    height: 4px;
+    height: 2px;
     width: 50px;
     background-color: #ec5242;
     bottom: 0;
@@ -460,6 +546,8 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .partners-container div {
