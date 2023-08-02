@@ -358,7 +358,7 @@ footer {
     font-size: 6rem;
     background-image: url(images/base/sunset.avif);
     background-size: cover;
-    background-clip: text;
+    background-clip: padding-box;
     -webkit-background-clip: text;
     color: transparent;
   }
