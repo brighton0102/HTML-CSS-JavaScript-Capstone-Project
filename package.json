@@ -1,0 +1,23 @@
+{
+  "name": "html-css-javascript-capstone-project",
+  "version": "1.0.0",
+  "description": "<!-- TABLE OF CONTENTS -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brighton0102/HTML-CSS-JavaScript-Capstone-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brighton0102/HTML-CSS-JavaScript-Capstone-Project/issues"
+  },
+  "homepage": "https://github.com/brighton0102/HTML-CSS-JavaScript-Capstone-Project#readme",
+  "devDependencies": {
+    "hint": "^7.1.10"
+  }
+}

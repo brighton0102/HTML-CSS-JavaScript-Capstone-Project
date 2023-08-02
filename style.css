@@ -96,10 +96,6 @@ body {
   letter-spacing: -1.6px;
 }
 
-.theme {
-  display: none;
-}
-
 .title {
   font-size: 1.563rem;
   font-weight: 300;
@@ -355,11 +351,16 @@ footer {
   }
 
   .title {
-    display: none;
+    font-size: 2rem;
   }
 
   .heading h1 {
-    display: none;
+    font-size: 6rem;
+    background-image: url(images/base/sunset.avif);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .heading h2 {
@@ -371,10 +372,6 @@ footer {
     line-height: 0px; /* 0% */
     letter-spacing: -3.399px;
     margin-bottom: 40px;
-  }
-
-  .theme {
-    display: block;
   }
 
   .second-title {

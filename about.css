@@ -444,7 +444,8 @@ body {
   .logo-summit h3 {
     text-align: center;
     margin: 2rem;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 30px;
   }
 
   .logo-summit h3::after {
@@ -497,7 +498,8 @@ body {
   .history h3 {
     text-align: center;
     margin: 2rem;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 30px;
   }
 
   .history h3::after {
