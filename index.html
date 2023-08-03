@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Capstone</title>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <nav>
+                <div class="desktop-nav">
+                    <img class="facebook-icon" src="./images/base/facebook.png" alt="">
+                    <img class="twitter-icon" src="./images/base/twitter.png" alt="">
+                    <ul>
+                        <li><a href="">English</a></li>
+                        <li><a href="">My Page</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="desktop-navbar">
+                    <a class="logo" href="">HUDSON</a> 
+                    <ul class="desktop-nav-items">
+                        <li class="nav-items"><a href="about.html">About</a></li>
+                        <li class="nav-items"><a href="">Services</a></li>
+                        <li class="nav-items"><a href="">Sponsors</a></li>
+                        <li class="nav-items"><a href="">News</a></li>
+                        <li class="nav-items"  id="campaign-btn"><a href="">CC Campaign</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bar">
+                    <div class="burger" id="btn">
+                        <span class="bar" id="btn1"></span>
+                        <span class="bar"></span>
+                        <span class="bar" id="btn2"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="heading">
+            <p class="title">"Making Differences in the life of others"</p>
+            <h1>LEADING THE WAY IN MEDICAL EXCELLENCE 2023</h1>
+            <p class="description">
+                Empowering Lives Through Exceptional Medical Care,
+                Journey to Health and Welliness starts Here.
+            </p>
+            <h2>2015.10.15(THU) ~ 16(FRI)</h2>
+            <p class="second-title">
+                Patience is the road to wisdom.
+            </p>
+        </div>
+    </section>
+
+    <!---Popular Services section--->
+    <section class="main-program">
+        <h1>Popular Services</h1>
+        <div class="cards-container">
+            <div class="card">
+                <img src="./images/base/program_icon_01.png" alt="">
+                <p class="card-title">Surgery</p>
+                <p class="card-info">Our comprehensive facilities include laboratory and imaging services, day care surgery, specialist consultation, medical treatment, and rehabilitative </p>
+            </div>
+            <div class="card">
+                <img src="./images/base/program_icon_02.png" alt="">
+                <p class="card-title">Urology</p>
+                <p class="card-info">Our comprehensive facilities include laboratory and imaging services, day care surgery, specialist consultation, medical treatment, and rehabilitative </p>
+            </div>
+            <div class="card">
+                <img src="./images/base/program_icon_05.png" alt="">
+                <p class="card-title">Surgery</p>
+                <p class="card-info">Our comprehensive facilities include laboratory and imaging services, day care surgery, specialist consultation, medical treatment, and rehabilitative </p>
+            </div>
+            <div class="card">
+                <img src="./images/base/program_icon_04.png" alt="">
+                <p class="card-title">Urology</p>
+                <p class="card-info">Our comprehensive facilities include laboratory and imaging services, day care surgery, specialist consultation, medical treatment, and rehabilitative</p>
+            </div>
+            <div class="card">
+                <img src="./images/base/program_icon_05.png" alt="">
+                <p class="card-title">Surgery</p>
+                <p class="card-info">Our comprehensive facilities include laboratory and imaging services, day care surgery, specialist consultation, medical treatment, and rehabilitative</p>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="services-btn" type="button">Learn More</button>
+        </div>
+    </section>
+
+    <!--- Specialist Doctors Team--->
+    <section class="specialist-doctors">
+        <h1>Specialist Doctors</h1>
+        <section class="specialist-cards"></section>
+        <button id="moreBtn" class="show-more-btn" type="button">MORE <img src="./images/base/arrow_down.png" alt=""></button>
+    </section>
+        <!--- Prtners --->
+
+    <section class="partners">
+        <h1>Partner</h1>
+        <div class="partners-container">
+            <div>
+                <img src="./images/base/daumkakaologo 1.png" alt="">
+            </div>
+            <div>
+                <img src="./images/base/googlekorea 1.png" alt="">
+            </div>
+            <div>
+                <img src="./images/base/airbnb 1.png" alt="">
+            </div>
+            <div>
+                <img src="./images/base/naver 1.png" alt="">
+            </div>
+            <div>
+                <img src="./images/base/mozilla 1.png" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="logo-container">
+            <a class="logo" href="">HUDSON</a>   
+        </div>
+        <div class="copy-right">
+            <p class="copy-right-author">2023 HUDSON Project. Made by Brighton Mtandi.</p>
+            <p>All rights reserved.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatum minima ipsam earum tenetur hic quis quasi suscipit aliquam corrupti.</p> 
+        </div>
+    </footer>
+
+    <script src="./utils/menu.js"></script>
+    <script src="./utils/specialist_doctors.js"></script>
+    <script>
+        window.addEventListener("load", () => { // when the page has loaded
+            const btn = document.getElementById("moreBtn");
+            btn.addEventListener("click", showMore);
+            
+            function showMore() {
+               let element = document.getElementsByClassName("specialist-info");
+                for(var i = 0; i < element.length; i++){
+                    element[i].style.display = "flex";
+                }
+                btn.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
