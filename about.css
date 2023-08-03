@@ -78,7 +78,6 @@ body {
 }
 
 .heading {
-  margin-top: 3rem;
   color: #ec5242;
 }
 
@@ -97,8 +96,13 @@ body {
 }
 
 .heading h1 {
-  font-size: 2.5rem;
+  font-family: Gothic A1, sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px; /* 0% */
   text-align: center;
+  margin-top: 15px;
 }
 
 .heading h2 {
@@ -124,7 +128,6 @@ body {
   padding: 1rem;
   line-height: 1.25rem;
   color: #868686;
-  display: inline-block;
   text-align: center;
 }
 
@@ -327,7 +330,6 @@ body {
     background-image: url('./images/base/main_big.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     background-size: cover;
     padding: 0;
   }
@@ -337,11 +339,14 @@ body {
   }
 
   .heading {
-    margin: 200px 200px;
+    padding-bottom: 50px;
   }
 
   .heading h1 {
-    font-size: 65px;
+    font-size: 3rem;
+    line-height: 1;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .heading .title {
@@ -362,6 +367,11 @@ body {
 
   .check-in-text {
     padding-top: 1rem;
+  }
+
+  .description {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .second-title {
@@ -390,11 +400,28 @@ body {
 
   #campaign-btn {
     border: 5px solid #ec4327;
-    color: #ec4327;
     padding: 0 17px 0 18px;
-    display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .desktop-navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.15s linear;
+  }
+
+  .desktop-navbar a:hover {
+    color: #ec5242;
+  }
+
+  #campaign-btn a {
+    color: #ec4327;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
   }
 
   .twitter-icon {
@@ -425,20 +452,12 @@ body {
     gap: 20px;
   }
 
-  .desktop-navbar ul li a {
-    text-decoration: none;
-    color: #000;
-    transition: all 0.15s linear;
-  }
-
-  .desktop-navbar a:hover {
-    color: #ec5242;
-  }
-
   /* Logo Summit */
 
   .logo-summit {
     border-bottom: #868686 1px solid;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 
   .logo-summit h3 {
@@ -462,8 +481,6 @@ body {
 
   .logo-summit p {
     text-align: center;
-    margin-left: 500px;
-    margin-right: 500px;
   }
 
   .logo-summit-2023 {

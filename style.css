@@ -166,6 +166,13 @@ body {
 
 .card-info {
   color: #fff;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 0.72px;
 }
 
 .services-btn {
@@ -336,7 +343,6 @@ footer {
     background-image: url('./images/base/main_big.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     background-size: cover;
     padding: 0;
   }
@@ -346,21 +352,27 @@ footer {
   }
 
   .heading {
-    /* margin: 200px 200px; */
     margin-left: 215px;
+    max-width: 793px;
+    padding-bottom: 121px;
+    margin-right: 215px;
   }
 
   .title {
     font-size: 2rem;
+    padding-bottom: 15px;
   }
 
   .heading h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     background-image: url(images/base/sunset.avif);
     background-size: cover;
     background-clip: padding-box;
     -webkit-background-clip: text;
     color: transparent;
+    line-height: 1;
+    font-family: Gothic A1, sans-serif;
+    font-weight: 900;
   }
 
   .heading h2 {
@@ -411,10 +423,28 @@ footer {
 
   #campaign-btn {
     border: 5px solid #ec4327;
-    color: #ec4327;
     padding: 0 17px 0 18px;
     justify-content: center;
     align-items: center;
+  }
+
+  .desktop-navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.15s linear;
+  }
+
+  .desktop-navbar a:hover {
+    color: #ec5242;
+  }
+
+  #campaign-btn a {
+    color: #ec4327;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
   }
 
   .twitter-icon {
@@ -445,24 +475,18 @@ footer {
     gap: 20px;
   }
 
-  .desktop-navbar ul li a {
-    text-decoration: none;
-    color: #000;
-    transition: all 0.15s linear;
-  }
-
-  .desktop-navbar a:hover {
-    color: #ec5242;
-  }
-
   /* Popular Services */
 
+  .main-program {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
   .cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-left: 12.5rem;
-    margin-right: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
 
   .main-program h1 {
@@ -488,6 +512,11 @@ footer {
   .card {
     display: flex;
     flex-direction: column;
+    transition: 0.2s all;
+  }
+
+  .card:hover {
+    border: 1px solid white;
   }
 
   .card p {
@@ -496,13 +525,16 @@ footer {
 
   /* Specialist Doctors Section */
 
+  .specialist-doctors {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+
   .specialist-cards {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-left: 200px;
-    margin-right: 200px;
   }
 
   .show-more-btn {
@@ -514,7 +546,6 @@ footer {
   .partners {
     background: #414246;
     display: block;
-    padding: 0 200px;
   }
 
   .partners h1 {
@@ -539,9 +570,9 @@ footer {
 
   .partners-container {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .partners-container div {
